@@ -29,7 +29,7 @@ class AboutObjects < Neo::Koan
     obj = Object.new
     another_obj = Object.new
     assert_equal true, obj.object_id != another_obj.object_id
-    assert_not_equal obj.object_id, another_obj.object_id       #MYKAELOS: I guessed that assert_not_equal existed, and works as expected.
+    assert_not_equal obj.object_id, another_obj.object_id       #MYKAELOS: I guessed that assert_not_equal existed, and works as expected. EDIT: Turns out I was mistaken. assert_equal and assert_not_equal exist in Ruby, but in this context, they're custom to this project.
   end
 
   def test_small_integers_have_fixed_ids
