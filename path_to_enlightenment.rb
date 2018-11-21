@@ -2,40 +2,40 @@
 
 $LOAD_PATH << File.dirname(__FILE__)
 
-require 'about_asserts'
-require 'about_nil'
-require 'about_objects'
-require 'about_arrays'
-require 'about_array_assignment'
-require 'about_hashes'
-require 'about_strings'
-require 'about_symbols'
-require 'about_regular_expressions'
-require 'about_methods'
+require 'about_asserts'               #DONE
+require 'about_nil'                   #DONE
+require 'about_objects'               #DONE
+require 'about_arrays'                #DONE
+require 'about_array_assignment'      #DONE
+require 'about_hashes'                #DONE
+require 'about_strings'               #DONE
+require 'about_symbols'               #DONE
+require 'about_regular_expressions'   #DONE
+require 'about_methods'               #DONE
 in_ruby_version("2") do
-  require 'about_keyword_arguments'
+  require 'about_keyword_arguments'   #DONE
 end
-require 'about_constants'
-require 'about_control_statements'
-require 'about_true_and_false'
-require 'about_triangle_project'
-require 'about_exceptions'
-require 'about_triangle_project_2'
-require 'about_iteration'
-require 'about_blocks'
-require 'about_sandwich_code'
-require 'about_scoring_project'
-require 'about_classes'
-require 'about_open_classes'
-require 'about_dice_project'
-require 'about_inheritance'
-require 'about_modules'
-require 'about_scope'
-require 'about_class_methods'
-require 'about_message_passing'
-require 'about_proxy_object_project'
-require 'about_to_str'
+require 'about_constants'             #DONE
+require 'about_control_statements'    #DONE
+require 'about_true_and_false'        #DONE
+require 'about_triangle_project'      #DONE
+require 'about_exceptions'            #DONE
+require 'about_triangle_project_2'    #DONE
+require 'about_iteration'             #DONE
+require 'about_blocks'                #DONE
+require 'about_sandwich_code'         #DONE
+# require 'about_scoring_project'           #SKIPPED for the minute
+require 'about_classes'               #DONE
+require 'about_open_classes'          #DONE
+require 'about_dice_project'          #DONE
+require 'about_inheritance'           #DONE
+require 'about_modules'               #DONE
+require 'about_scope'                 #DONE
+require 'about_class_methods'         #DONE
+require 'about_message_passing'       #DONE
+# require 'about_proxy_object_project'      #NOPE NOPE NOPE
+require 'about_to_str'                #DONE
 in_ruby_version("jruby") do
-  require 'about_java_interop'
+  require 'about_java_interop'        #Guess I don't have to do?
 end
 require 'about_extra_credit'
