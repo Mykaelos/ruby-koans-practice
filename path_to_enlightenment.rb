@@ -24,7 +24,7 @@ require 'about_triangle_project_2'    #DONE
 require 'about_iteration'             #DONE
 require 'about_blocks'                #DONE
 require 'about_sandwich_code'         #DONE
-# require 'about_scoring_project'           #SKIPPED for the minute
+require 'about_scoring_project'       #DONE
 require 'about_classes'               #DONE
 require 'about_open_classes'          #DONE
 require 'about_dice_project'          #DONE
