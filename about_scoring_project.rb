@@ -34,19 +34,19 @@ def score(dice)
   points = 0
 
   # Making a clone so we don't affect the original array as we remove elements
-  remainingDice = dice.clone
+  remaining_dice = dice.clone
 
   # Special case of 1000 pts for 3*Ones
-  points += 1000 if removeFirstThreeOfItem(remainingDice, 1)
+  points += 1000 if remove_first_three_of_item(remaining_dice, 1)
 
   # Remaining case of x*100 pts for 3*Xs
   (2..6).each do |i|
-    points += 100 * i if removeFirstThreeOfItem(remainingDice, i)
+    points += 100 * i if remove_first_three_of_item(remaining_dice, i)
   end
 
   # Tally points for remaining Ones and Fives
-  points += 100 * remainingDice.count(1)
-  points += 50 * remainingDice.count(5)
+  points += 100 * remaining_dice.count(1)
+  points += 50 * remaining_dice.count(5)
 
   return points
 end
@@ -54,7 +54,7 @@ end
 # I learned that array.delete(3) will delete all elements == 3, and not just the first one.
 # The best way I found so far was to delete_at index(3), which is surprising that there's
 # not a built in method for deleting the first occurance of an element.
-def removeFirstThreeOfItem(array, item)
+def remove_first_three_of_item(array, item)
   if array.select{|x| x == item}.length >= 3
     3.times { array.delete_at(array.index(item)) }
     return true

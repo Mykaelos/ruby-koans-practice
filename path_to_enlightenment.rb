@@ -33,7 +33,7 @@ require 'about_modules'               #DONE
 require 'about_scope'                 #DONE
 require 'about_class_methods'         #DONE
 require 'about_message_passing'       #DONE
-# require 'about_proxy_object_project'      #NOPE NOPE NOPE
+require 'about_proxy_object_project'  #DONE
 require 'about_to_str'                #DONE
 in_ruby_version("jruby") do
   require 'about_java_interop'        #Guess I don't have to do?
